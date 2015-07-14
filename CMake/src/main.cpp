@@ -19,7 +19,6 @@ int main(int argc, char* argv[]) {
   int result = 0;
 
   ToDo list;
-
   list.addTask("write code");
   list.addTask("compile");
   list.addTask("test");
