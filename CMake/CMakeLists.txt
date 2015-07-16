@@ -6,8 +6,8 @@ enable_testing()
 
 add_executable(
   toDo
-  main.cpp
-  todo.cpp
+  src/main.cpp
+  src/todo.cpp
   ) # headers doesn't need to be cared (automatic)
 
 add_test(toDoTest toDo)
