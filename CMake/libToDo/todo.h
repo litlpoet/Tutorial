@@ -1,7 +1,7 @@
 // Copyright
 
-#ifndef _TODO_H_
-#define _TODO_H_
+#ifndef CMAKE_LIBTODO_TODO_H_
+#define CMAKE_LIBTODO_TODO_H_
 
 #include <string>
 #include <vector>
@@ -22,4 +22,4 @@ class ToDo {
   std::vector<std::string> this_tasks;
 };
 
-#endif  // _TODO_H_
+#endif  // CMAKE_LIBTODO_TODO_H_

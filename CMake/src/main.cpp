@@ -1,7 +1,7 @@
 // Copyright
 
 #include <iostream>
-#include "todo.h"
+#include "libToDo/todo.h"
 
 using std::cerr;
 using std::cout;
@@ -15,7 +15,7 @@ int equalityTest(const T1 test_val, const T2 expected_val,
                  const char* test_name, const char* expected_name,
                  const char* fine_name, const int line_number);
 
-int main(int argc, char* argv[]) {
+int main(int, char**) {
   int result = 0;
 
   ToDo list;
