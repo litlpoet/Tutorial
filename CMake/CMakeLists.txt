@@ -2,7 +2,11 @@ cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
 
 project("To Do List")
 
+list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake/Modules)
+
 enable_testing()
+
+include(gmock)
 
 if ("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU" OR
     "${CMAKE_CXX_COMPILER_ID}" STREQUAL "Clang")
@@ -27,15 +31,15 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR})
 add_subdirectory(libToDo)
 
 add_executable(
-  toDo
+  ToDoList
   src/main.cpp
   ) # headers doesn't need to be cared (automatic)
 target_link_libraries(
-  toDo
-  libToDo
+  ToDoList
+  ToDo
   )
 
-add_test(toDoTest toDo)
+add_test(ToDoTest ToDoList)
 
 set(CONFIGURED_ONCE TRUE
   CACHE INTERNAL

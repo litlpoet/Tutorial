@@ -1,0 +1,15 @@
+-Wall
+-Wextra
+-fexceptions
+-fcxx-exceptions
+-fmath-errno
+-fdeprecated-macro
+-target-cpu x64-64
+-target-linker-version 2.25
+-std=c++11
+-stdlib=stdlibc++
+-dwarf-column-info
+-fdiagnostics-show-option -o - -x c++
+-I.
+-I..
+-I/home/bk/VersionControl/Tutorial/CMake/src/
